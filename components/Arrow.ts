@@ -2,7 +2,6 @@ import Base, { Props } from './base'
 
 export default class Arrow extends Base {
   constructor(props: Props) {
-    console.log('props: ', props)
     super(props)
   }
 

@@ -1,9 +1,12 @@
 export interface Props {
+  id?: string
   w?: number
   h?: number
   x?: number
   y?: number
   r?: number
+  vx?: number
+  vy?: number
   rotation?: number
   alpha?: number
   fillStyle?: string
@@ -11,11 +14,14 @@ export interface Props {
 }
 
 export default class Base {
+  id: string | null = null
   w: number = 0
   h: number = 0
   x: number = 0
   y: number = 0
   r: number = 0
+  vx: number = 0
+  vy: number = 0
   scaleX: number = 1
   scaleY: number = 1
   rotation: number = 0

@@ -15,3 +15,16 @@ export function getOffset(ele: HTMLCanvasElement): Mouse {
   })
   return mouse
 }
+
+// 生成随机数
+export function rp(arr: number[], int?: boolean): number {
+  const max = Math.max(...arr)
+  const min = Math.min(...arr)
+  const num = Math.random() * (max - min) + min
+  return int ? Math.round(num) : num
+}
+
+// 生成随机颜色
+export function createColor(): string {
+  return `rgb(${rp([55, 255], true)}, ${rp([55, 255], true)}, ${rp([55, 255], true)})`
+}
