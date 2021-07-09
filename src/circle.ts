@@ -46,6 +46,6 @@ let rx = 100,
   ctx.restore()
   ball2.x = W / 2 + rx * Math.cos(angle)
   ball2.y = H / 1.42 + ry * Math.sin(angle)
-  console.log('ball2: ', ball2)
+
   ball2.render(ctx)
 })()

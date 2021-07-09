@@ -28,3 +28,8 @@ export function rp(arr: number[], int?: boolean): number {
 export function createColor(): string {
   return `rgb(${rp([55, 255], true)}, ${rp([55, 255], true)}, ${rp([55, 255], true)})`
 }
+
+// 角度转弧度
+export function toRad(angle: number) {
+  return (angle * Math.PI) / 180
+}

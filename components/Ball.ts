@@ -19,4 +19,9 @@ export default class Ball extends Base {
     ctx.restore()
     return this
   }
+
+  isPoint(pos: { x: number; y: number }): boolean {
+    const { x, y } = pos
+    return this.r >= Math.sqrt((x - this.x) ** 2 + (y - this.y) ** 2)
+  }
 }
